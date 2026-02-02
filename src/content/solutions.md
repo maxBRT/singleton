@@ -6,3 +6,4 @@ La solution qu'il propose aux deux problèmes précédemment cités est la suiva
 
 On cache le constructeur de la classe derrière un champ privé, la classe garde une référence statique vers elle-même et on expose une méthode publique qui retourne cette instance (ou la crée au premier appel).
 
+
