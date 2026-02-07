@@ -58,23 +58,33 @@ const base = import.meta.env.BASE_URL;
             font-weight: bold;
             transition: all 0.2s ease-in-out;
             &:hover {
-                color: #FFD700;
+                color: #F67583;
                 transition: all 0.2s ease-in-out;
-            }Il donne un point d’acc
+            }
         }
     }
 
     .container {
         width: 70%;
         margin: 2rem auto;
+        font-size: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
+    }
+    h1 {
+        color: #F67583;
     }
 
     h2 {
+        font-size: 3rem;
         margin-bottom: 2rem;
+        color: #F67583;
+    }
+
+    strong {
+        color: #F67583;
     }
 
     section {
@@ -83,6 +93,15 @@ const base = import.meta.env.BASE_URL;
         strong {
             font-weight: bold;
         }
+    }
+
+    pre {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .content {
+        width: 100%;
     }
 
     .credits {

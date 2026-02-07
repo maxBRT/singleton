@@ -1,22 +1,72 @@
 ---
-import { Image } from 'astro:assets';
-import proConImage from '../assets/pro-con.webp';
 ---
 
 <section>
     <h2>Les pours et les moins pours</h2>
-    <div>
-        <Image class="image" src={proConImage} alt="Les pours et les moins pours" />
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th class="pro">Avantages</th>
+                    <th class="con">Inconvénients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="pro">Nous pouvons être sûre que notre classe n'a qu'une seule instance</td>
+                    <td class="con">Ne respecte pas le single responsability principle</td>
+                </tr>
+                <tr>
+                    <td class="pro">Nous avons un point d'accès global à notre classe</td>
+                    <td class="con">Ce patron peu parfois cacher un mauvais design initial</td>
+                </tr>
+                <tr>
+                    <td class="pro">Il est impossible d'écraser l'instance de notre classe.</td>
+                    <td class="con">Le singleton requière une attention particulière dans un environnement concurent</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
 <style>
-    .image {
-        width: 100%;
-        border-radius: 1rem;
-    }
     h2 {
         text-align: center;
     }
 
+    .table-wrapper {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+    }
+
+    
+    th, td {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    td.pro {
+        background-color: #90ee90;
+        color: #1a1a1a;
+    }
+
+    td.con {
+        background-color: #f0b0b0;
+        color: #1a1a1a;
+    }
+
+    th {
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    td {
+        border-top: 1px solid #1a1a1a33;
+    }
 </style>
