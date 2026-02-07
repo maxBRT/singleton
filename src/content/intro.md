@@ -1,5 +1,3 @@
-<img src="public/singleton-comic-1-en-1.5x.webp" width="1400" />
-
 Le Singleton est un patron de conception de type créationnel.
 Les patrons créationnels ne s’occupent pas du comportement des objets ni de leurs interactions, mais plutôt de la façon dont ils sont créés en mémoire.
 Ils contrôlent donc comment et combien d’instances peuvent exister.
