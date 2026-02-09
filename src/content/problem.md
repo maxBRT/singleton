@@ -16,8 +16,4 @@ Certains langages nous permettent de définir des variables globales qui peuvent
 
 Donc, lorsqu'on dit « donner un accès global à un objet », on sous-entend plutôt : donner un point d'accès global et sécurisé !
 
-3. **La question des performances**
 
-Réinstancier plusieurs fois des ressources coûteuses peut rapidement entraîner une consommation mémoire excessive et augmenter le temps de chargement.
-Dans un jeu vidéo par exemple, si chaque objet recharge la même texture de 50 MB, on duplique inutilement les données en mémoire.
-Un Singleton permet au contraire de charger la ressource une seule fois, puis de la partager entre tous les composants du système.
