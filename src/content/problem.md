@@ -1,6 +1,6 @@
 ## Les problèmes qu'il règle
 
-1. **Il s'assure qu'une classe à une seul instance** 
+1. **Il s'assure qu'une classe à une seule instance** 
 
 Pour comprendre comment le singleton fonctionne, il faut d'abord comprendre comment fonctionne un constructeur.
 
